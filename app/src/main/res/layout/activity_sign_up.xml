@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUp"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/brgy_logo_only" />
+
+
+        <EditText
+            android:id="@+id/surnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surname"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/middleNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="M.I"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            />
+
+        <Spinner
+            android:id="@+id/genderInput"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Civil Status:"
+            />
+
+        <Spinner
+            android:id="@+id/civilStatusInput"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            />
+
+        <EditText
+            android:id="@+id/contactInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+            />
+
+        <EditText
+            android:id="@+id/religionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Religion"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/occupationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Occupation"
+            android:drawableStart="@drawable/ic_baseline_contact_page_24"
+            />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            />
+
+        <EditText
+            android:id="@+id/passwordConfirmationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            />
+
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Register"
+            android:background="#009688"
+            />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

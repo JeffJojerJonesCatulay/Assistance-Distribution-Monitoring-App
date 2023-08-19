@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_resident"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Add Resident"
+        />
+
+    <item
+        android:id="@+id/nav_incoming"
+        android:icon="@drawable/ic_baseline_person_add_alt_24"
+        android:title="Incoming Recipient"
+        />
+
+    <item
+        android:id="@+id/nav_complete"
+        android:icon="@drawable/ic_baseline_done_all_24"
+        android:title="Complete Recipient"
+        />
+
+</menu>

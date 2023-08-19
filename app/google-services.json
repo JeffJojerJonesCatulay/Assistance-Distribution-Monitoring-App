@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576176304721",
+    "project_id": "brgymonitoringappusers",
+    "storage_bucket": "brgymonitoringappusers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576176304721:android:dea41f4f816e5e7ebcfe70",
+        "android_client_info": {
+          "package_name": "com.example.assistancedistributionmonitoringapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576176304721-a4svido1bqvi7d63jk0h58ckk0d6gt8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPC_bpJZnv5wrprO_8x4o8TfzuwYsaclE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576176304721-a4svido1bqvi7d63jk0h58ckk0d6gt8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

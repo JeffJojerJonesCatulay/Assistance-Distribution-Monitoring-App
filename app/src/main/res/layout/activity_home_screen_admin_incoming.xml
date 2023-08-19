@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenAdminIncoming">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00BCD4"
+        app:menu="@menu/admin_nav"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        tools:ignore="MissingConstraints"
+        android:fitsSystemWindows="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/brgy_logo_only"
+                android:layout_gravity="bottom"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/admin_bg"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/scanQrBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Scan QR"
+                android:background="@color/teal_700"
+                />
+
+            <TextView
+                android:id="@+id/sample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Incoming Recipient"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                />
+
+            <EditText
+                android:id="@+id/addressInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+                />
+
+            <EditText
+                android:id="@+id/contactInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact"
+                android:inputType="number"
+                android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+                />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                />
+
+            <EditText
+                android:id="@+id/dateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select A Date"
+                android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                />
+
+            <Button
+                android:id="@+id/dateSelector"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Schedule Date"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                />
+
+            <Spinner
+                android:id="@+id/sessionInput"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of Benefits:"
+                />
+
+            <Spinner
+                android:id="@+id/benefitInput"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                />
+
+            <EditText
+                android:id="@+id/specifyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specify (If cash input the value)"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                />
+
+            <EditText
+                android:id="@+id/sponsorInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sponsor"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                />
+
+            <Button
+                android:id="@+id/incomingBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Add To Incoming List"
+                android:background="#00BCD4"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/viewResidentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="View Incoming"
+                android:background="#00BCD4"
+                android:layout_marginTop="5dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

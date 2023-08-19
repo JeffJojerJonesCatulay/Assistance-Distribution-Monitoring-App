@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Barangay Assistance</string>
+    <string name="title_activity_add_admin">addAdmin</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="eula">
+        This Agreement is Entered into a Project of Mobile apps for Assistance Distribution Monitoring System for Barangay 436 Zone 44, Sampaloc Manila
+Whereas, License to software for the purpose of all works developed by the Researcher’s\n\n
+1.	License Mobile apps for Assistance Distribution Monitoring System
+(Nontransferable limited to download, install and use the application for your personal purposes strictly accordance with the terms of this Agreement.
+You may not:\n\n
+•	Modify, Translate or create derivative works base on the software.\n
+•	Build a system using a similar ideas, features and functions of the software.\n
+•	Use this software for anomalous.\n\n
+
+By clicking the “I agree” Button downloading or using the Application you are agreeing to be bound by the terms and condition of this Agreement. If you do not agree to the terms, do not click “I Agree” Button and do not download and use this Application
+
+    </string>
+
+    <string name="about">
+About the Application\n\n
+        This application "Mobile apps for Assistance Distribution Monitoring System for Barangay 436 Zone 44, Sampaloc, Manila" was developed to:\n\n
+•	To Monitor the distribution of barangay assistance in Barangay 436, Zone 44, Sampaloc, Manila\n
+•	To have a transparent list of distribution of barangay assistance for the barangay residents\n
+•	To lessen the physical contact of distributors and recipient\n\n
+
+        In this application, the user has the access to change/reset his password via e-mail. This application will also send an SMS notification to notify the user that he completely register in the database. The user can only view and browse while the assigned admin can add, edit and update the recipient in the application. Another feature of this apps is it can’t be accessed without using the internet or mobile data.
+The personal data you entered will not be used for any unlawful activity and will not violate the data privacy act. This application is strictly used only by the residents (recipients) and control only by the assigned admin of the head of the barangay.
+
+
+
+    </string>
+</resources>

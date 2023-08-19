@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenAdminComplete">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00BCD4"
+        app:menu="@menu/admin_nav"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        tools:ignore="MissingConstraints"
+        android:fitsSystemWindows="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/brgy_logo_only" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/admin_bg" />
+
+            <Button
+                android:id="@+id/scanQrBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/teal_700"
+                android:text="Scan QR" />
+
+            <TextView
+                android:id="@+id/sample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipient Details"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                android:hint="Full Name" />
+
+            <EditText
+                android:id="@+id/addressInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+                android:hint="Address" />
+
+            <EditText
+                android:id="@+id/contactInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+                android:hint="Contact"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/dateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                android:hint="Date" />
+
+            <EditText
+                android:id="@+id/timeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:hint="Time" />
+
+            <EditText
+                android:id="@+id/typeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                android:hint="Type" />
+
+            <EditText
+                android:id="@+id/specifyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                android:hint="Details" />
+
+            <EditText
+                android:id="@+id/sponsorInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                android:hint="Sponsor" />
+
+            <Button
+                android:id="@+id/completeBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="#00BCD4"
+                android:text="Complete This Transaction"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/viewResidentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="View Completed"
+                android:background="#00BCD4"
+                android:layout_marginTop="5dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
